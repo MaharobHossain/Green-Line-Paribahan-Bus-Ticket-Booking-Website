@@ -189,7 +189,7 @@
 
 
         <!-- ticket Booking section -->
-         <section class=" bg-[#F7F8F8] py-20 rounded-t-3xl border-t- border-[#1DD100]">
+         <section class=" bg-[#F7F8F8] lg:py-20 py-10 rounded-t-3xl border-t- border-t border-[#1DD100]">
             <h1 class="text-center text-5xl font-bold text-[#1DD100]">Green Line Paribahan</h1>
             <p class="text-center text-lg text-[#030712] mt-5">Yes, you can run unit tests and view the results directly within the app. The integrated <br>testing features allow for a streamlined .</p>
 
@@ -197,20 +197,23 @@
             <div class="lg:max-w-6xl lg:h-96 lg:mx-auto bg-white rounded-2xl mt-7">
 
 
-                <div class="flex justify-around">
+                <div class="flex lg:flex-row flex-col justify-around">
 
+                       <!-- Left section -->
                 <div class=" space-y-5">
                 <div class="flex max-w-[740px] justify-between pt-7">
 
                     <div class="flex gap-3 justify-center items-center">
-                        <img class="max-w-16 max-h-11" src="images/bus-logo.png" alt="Bus logo">
+                        <img class="lg:max-w-16 lg:max-h-11 max-w-8" src="images/bus-logo.png" alt="Bus logo">
                         <div>
-                            <h2 class="text-3xl font-bold"> Green Line Paribahan</h2>
-                            <p class="text-lg text-[#030712] ">Coach-009-WEB ! AC_Business</p>
+                            <h2 class="lg:text-3xl font-bold"> Green Line Paribahan</h2>
+                            <p class="lg:text-lg text-xs text-[#030712] ">Coach-009-WEB ! AC_Business</p>
                         </div>
                     </div>
 
-                    <button class="btn bg-[#bef0b5] inter-font text-[#1DD100]"><img src="images/seat-green.png">40 Seats left</button>
+                    <span class="flex h-11 text-[#1DD100] bg-green-100 text-lg font-medium p-2 rounded-lg inter-font">
+                        <img class="w-8 h-8" src="images/seat-green.png"> 40 Seats left
+                      </span>
                 </div>
 
 
@@ -234,11 +237,18 @@
 
             </div>
 
-                            <img class="h-96" src="images/info-devider.png" alt="Diveder Images">
 
+                  <!-- Divider -->
+                  <div class="hidden lg:block ">
+                            <img class="h-96" src="images/info-devider.png" alt="Diveder Images">
+                        </div>
+
+
+                            
+                  <!-- Right section -->
                             <div class=" flex flex-col items-center justify-center">
                                 <img src="images/fare.png" alt="Taka Images">
-                                <h2 class="text-3xl font-bold">550 Taka</h2>
+                                <h2 class="text-3xl font-bold">650 Taka</h2>
                                 <p class="text-2xl font-semibold text-[#a2a2a3]">Per Seat</p>
                             </div>
 
